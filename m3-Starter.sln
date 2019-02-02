@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Data", "GeoLib.Data\GeoLib.Data.csproj", "{DB2CA02F-5D34-4734-8A44-634BFD381244}"
 EndProject
@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8AFE06
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{FB116C08-F077-4419-A66C-4C8227642D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.ConsoleHost", "GeoLib.ConsoleHost\GeoLib.ConsoleHost.csproj", "{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.WebHost", "GeoLib.WebHost\GeoLib.WebHost.csproj", "{BD202E19-A39F-49B8-908A-02B04834E2F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,8 +52,23 @@ Global
 		{2C7C61E8-0922-48F3-8881-8F1D96710806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C7C61E8-0922-48F3-8881-8F1D96710806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C7C61E8-0922-48F3-8881-8F1D96710806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6} = {FB116C08-F077-4419-A66C-4C8227642D66}
+		{BD202E19-A39F-49B8-908A-02B04834E2F0} = {FB116C08-F077-4419-A66C-4C8227642D66}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7308E-ADC5-4099-8051-55D56AF29352}
 	EndGlobalSection
 EndGlobal
