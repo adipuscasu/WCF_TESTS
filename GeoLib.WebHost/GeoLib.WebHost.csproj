@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -80,6 +82,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoLib.Contracts\GeoLib.Contracts.csproj">
+      <Project>{5f1ffdba-bbaa-4e8a-be50-4a29675dd500}</Project>
+      <Name>GeoLib.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoLib.Services\GeoLib.Services.csproj">
+      <Project>{ee4a4ff2-57b8-42d2-a1a4-dbfdbc9cb949}</Project>
+      <Name>GeoLib.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
