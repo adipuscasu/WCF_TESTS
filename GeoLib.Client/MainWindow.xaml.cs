@@ -1,5 +1,7 @@
 ﻿using GeoLib.Proxies;
 using System.Diagnostics;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Threading;
 using System.Windows;
 
@@ -21,7 +23,7 @@ namespace GeoLib.Client
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             if (txtZipCode.Text == "") return;
-            var proxy = new GeoClient();
+            var proxy = new GeoClient("httpEP");
             var data = proxy.GetZipInfo(txtZipCode.Text);
             if (data != null)
             {
@@ -33,10 +35,14 @@ namespace GeoLib.Client
 
         private void btnGetZipCodes_Click(object sender, RoutedEventArgs e)
         {
-            if (txtState.Text != null)
-            {
+            if (string.IsNullOrEmpty(txtState.Text)) return;
+            var endpointAddress = new EndpointAddress("net.tcp://localhost:8009/GeoService");
+            Binding binding = new NetTcpBinding();
 
-            }
+            var proxy = new GeoClient(binding, endpointAddress);
+            var data = proxy.GetZips(txtState.Text);
+            if (data != null) lstZips.ItemsSource = data;
+            proxy.Close();
         }
 
         private void btnMakeCall_Click(object sender, RoutedEventArgs e)
