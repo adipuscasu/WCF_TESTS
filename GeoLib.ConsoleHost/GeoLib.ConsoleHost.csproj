@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GeoLib.Contracts\GeoLib.Contracts.csproj">
+      <Project>{5f1ffdba-bbaa-4e8a-be50-4a29675dd500}</Project>
+      <Name>GeoLib.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoLib.Services\GeoLib.Services.csproj">
       <Project>{EE4A4FF2-57B8-42D2-A1A4-DBFDBC9CB949}</Project>
       <Name>GeoLib.Services</Name>
