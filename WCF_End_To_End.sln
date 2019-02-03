@@ -26,6 +26,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.ConsoleHost", "GeoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.WebHost", "GeoLib.WebHost\GeoLib.WebHost.csproj", "{BD202E19-A39F-49B8-908A-02B04834E2F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.WindowsHost", "GeoLib.WindowsHost\GeoLib.WindowsHost.csproj", "{2E9A356E-3056-4A2D-8EBA-4270B465605A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Proxies", "GeoLib.Proxies\GeoLib.Proxies.csproj", "{E76A5686-E98A-4884-AC1C-2511CB06F5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Client", "GeoLib.Client\GeoLib.Client.csproj", "{49E428FC-C9DC-4C1A-B93A-7ACB32C7823F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +66,18 @@ Global
 		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD202E19-A39F-49B8-908A-02B04834E2F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9A356E-3056-4A2D-8EBA-4270B465605A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9A356E-3056-4A2D-8EBA-4270B465605A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9A356E-3056-4A2D-8EBA-4270B465605A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9A356E-3056-4A2D-8EBA-4270B465605A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76A5686-E98A-4884-AC1C-2511CB06F5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76A5686-E98A-4884-AC1C-2511CB06F5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76A5686-E98A-4884-AC1C-2511CB06F5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76A5686-E98A-4884-AC1C-2511CB06F5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E428FC-C9DC-4C1A-B93A-7ACB32C7823F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E428FC-C9DC-4C1A-B93A-7ACB32C7823F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E428FC-C9DC-4C1A-B93A-7ACB32C7823F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E428FC-C9DC-4C1A-B93A-7ACB32C7823F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +85,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9A44AD8B-4ADE-47C9-94CB-2D5A9C5B2BB6} = {FB116C08-F077-4419-A66C-4C8227642D66}
 		{BD202E19-A39F-49B8-908A-02B04834E2F0} = {FB116C08-F077-4419-A66C-4C8227642D66}
+		{2E9A356E-3056-4A2D-8EBA-4270B465605A} = {FB116C08-F077-4419-A66C-4C8227642D66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7308E-ADC5-4099-8051-55D56AF29352}
