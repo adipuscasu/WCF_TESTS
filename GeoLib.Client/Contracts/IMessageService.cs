@@ -2,7 +2,7 @@
 
 namespace GeoLib.Client.Contracts
 {
-    [ServiceContract(Namespace = "http://www.pluralsight.com/MiguelCastro/WCF-End-To-End")]
+    [ServiceContract]
     public interface IMessageService
     {
         [OperationContract]

@@ -4,6 +4,7 @@ using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Threading;
 using System.Windows;
+using GeoLib.Client.Contracts;
 
 namespace GeoLib.Client
 {
@@ -23,7 +24,7 @@ namespace GeoLib.Client
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             if (txtZipCode.Text == "") return;
-            var proxy = new GeoClient("httpEP");
+            var proxy = new GeoClient("webEP");
             var data = proxy.GetZipInfo(txtZipCode.Text);
             if (data != null)
             {
@@ -47,7 +48,11 @@ namespace GeoLib.Client
 
         private void btnMakeCall_Click(object sender, RoutedEventArgs e)
         {
+                ChannelFactory<IMessageService> factory = new ChannelFactory<IMessageService>("");
+                IMessageService proxy = factory.CreateChannel();
+                proxy.ShowMessage(txtMessage.Text);
 
+                factory.Close();
         }
     }
 }
